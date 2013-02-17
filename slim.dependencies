@@ -18,5 +18,14 @@
         "repository": "SlimRoms/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
         "branch": "jb4.2"
+    },
+    {
+        "repository": "TheMuppets/proprietary_vendor_widevine",
+        "target_path": "vendor/widevine",
+        "branch": "cm-10.1"
+    },
+    {   "repository": "TheMuppets/proprietary_vendor_audience",
+        "target_path": "vendor/audience",
+        "branch": "cm-10.1"
     }
 ]
