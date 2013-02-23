@@ -34,8 +34,8 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_ARCH_VARIANT_CPU := cortex-a15
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_manta_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/manta
+#TARGET_KERNEL_CONFIG := cyanogenmod_manta_defconfig
+#TARGET_KERNEL_SOURCE := kernel/samsung/manta
 
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
