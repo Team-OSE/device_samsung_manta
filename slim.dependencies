@@ -14,6 +14,11 @@
         "target_path": "vendor/widevine",
         "branch": "jb4.2"
     },
+    {
+        "repository": "SlimRoms/proprietary_vendor_broadcom",
+        "taget_path": "vendor/broadcom",
+        "branch": "jb4.2"
+    },
     {   "repository": "TheMuppets/proprietary_vendor_audience",
         "target_path": "vendor/audience",
         "branch": "cm-10.1"
