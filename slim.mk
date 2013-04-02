@@ -1,7 +1,7 @@
 # Release name
-PRODUCT_RELEASE_NAME := Nexus10
+PRODUCT_RELEASE_NAME := manta
 
-# Inherit some common CM stuff.
+# Inherit some common SLIM stuff.
 $(call inherit-product, vendor/slim/config/common_full_tablet_wifionly.mk)
 
 # Enhanced NFC
