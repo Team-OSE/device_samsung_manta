@@ -1,6 +1,10 @@
 # Release name
 PRODUCT_RELEASE_NAME := manta
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2560
+TARGET_SCREEN_WIDTH := 1600
+
 # Inherit some common SLIM stuff.
 $(call inherit-product, vendor/slim/config/common_full_tablet_wifionly.mk)
 
@@ -15,10 +19,6 @@ $(call inherit-product, vendor/slim/config/common_sgs.mk)
 
 # Inherit torch settings
 $(call inherit-product, vendor/slim/config/common_ledflash.mk)
-
-#Boot Animation
-PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/hdpi/bootanimation.zip:system/media/bootanimation.zip
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := manta
