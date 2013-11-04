@@ -1,5 +1,3 @@
-#!/bin/sh
-
 # Copyright 2012 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,33 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# start jb-mr1-dev
-# 474128 = JOO86
-# 521994 = JOP32B
-# 526897 = JOP39B
-# 527221 = JOP40
-# 527662 = JOP40C
-# 533553 = JOP40D
-# end jb-mr1-dev
-# start jb-mr1.1-dev
-# 551245 = JDP82
-# 573038 = JDQ39
-# end jb-mr1.1-dev
-# start jb-mr2-dev
-# 683083 = JWR51
-# 689345 = JWR58
-# 690834 = JWR59
-# 704243 = JWR66G
-# 711294 = JWR66N
-# 737497 = JWR66V
-# end jb-mr2-dev
+# Samsung blob(s) necessary for Manta hardware
+PRODUCT_PACKAGES := \
+    fimc_is_fw \
+    fimc_is_fw2 \
+    maxtouch \
+    mfc_fw \
+    setfile \
+    setfile_4e5 \
+    setfile_6a3 \
+    libGLES_mali \
+    libdrmdecrypt \
+    libmalicore \
+    libRSDriverArm \
+    libstagefright_hdcp \
+    00060308060501020000000000000000 \
+    020a0000000000000000000000000000 \
+    07060000000000000000000000000000 \
+    ffffffff000000000000000000000005 \
 
-source ../../../common/clear-factory-images-variables.sh
-BUILD=737497
-DEVICE=manta
-PRODUCT=mantaray
-VERSION=jwr66v
-SRCPREFIX=signed-
-BOOTLOADER=mantamd03
-ERASEALL=true
-source ../../../common/generate-factory-images-common.sh

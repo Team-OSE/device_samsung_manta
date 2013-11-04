@@ -30,15 +30,6 @@ TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
 TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
-ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_ARCH_VARIANT_CPU := cortex-a15
-
-# Enable various prefetch optimizations
-COMMON_GLOBAL_CFLAGS += -D__ARM_USE_PLD -D__ARM_CACHE_LINE_SIZE=64
-
-# Define kernel config for inline building
-#TARGET_KERNEL_CONFIG := cyanogenmod_manta_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/manta
 TARGET_CPU_VARIANT := cortex-a15
 
 #Bluetooth
@@ -82,7 +73,7 @@ WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
 
-BOARD_LIB_DUMPSTATE := libdumpstate.manta
+BOARD_HAL_STATIC_LIBRARIES := libhealthd.manta libdumpstate.manta
 
 BOARD_CHARGER_DISABLE_INIT_BLANK := true
 
@@ -93,26 +84,21 @@ TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_UI_LIB := librecovery_ui_manta
 TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_manta
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/manta
-BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 
 BOARD_HAS_NO_SELECT_BUTTON := true
-
-# Support WebGL in WebKit
-ENABLE_WEBGL := true
-
 
 BOARD_SEPOLICY_DIRS := \
 	device/samsung/manta/sepolicy
 
 BOARD_SEPOLICY_UNION := \
-        file_contexts \
-        genfs_contexts \
-        adbd.te \
-        app.te \
-        device.te \
-        domain.te \
-        gpsd.te \
-        file.te \
-        mediaserver.te \
-        surfaceflinger.te \
-        system.te
+	file_contexts \
+	genfs_contexts \
+	adbd.te \
+	app.te \
+	device.te \
+	domain.te \
+	gpsd.te \
+	file.te \
+	mediaserver.te \
+	surfaceflinger.te \
+	system.te
