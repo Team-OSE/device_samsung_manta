@@ -23,5 +23,10 @@
         "repository": "SlimRoms/proprietary_vendor_audience",
         "target_path": "vendor/audience",
         "branch": "kk4.4"
+    },
+    {
+        "repository": "SlimRoms/kernel_samsung_manta",
+        "target_path": "kernel/samsung/manta",
+        "branch": "kk4.4"
     }
 ]
