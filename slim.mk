@@ -14,9 +14,6 @@ $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/samsung/manta/full_manta.mk)
 
-# Inherit torch settings
-$(call inherit-product, vendor/slim/config/common_ledflash.mk)
-
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := manta
 PRODUCT_NAME := slim_manta
