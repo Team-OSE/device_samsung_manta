@@ -12,12 +12,6 @@
         "revision": "kk4.4"
     },
     {
-        "remote": "slim",
-        "repository": "hardware_samsung",
-        "target_path": "hardware/samsung",
-        "revision": "kk4.4"
-    },
-    {
         "remote": "gh",
         "repository": "TheLoonyBin/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
@@ -33,18 +27,6 @@
         "remote": "gh",
         "repository": "TheLoonyBin/proprietary_vendor_broadcom",
         "target_path": "vendor/broadcom",
-        "revision": "kk4.4"
-    },
-    {
-        "remote": "gh",
-        "repository": "TheLoonyBin/proprietary_vendor_audience",
-        "target_path": "vendor/audience",
-        "revision": "kk4.4"
-    },
-    {
-        "remote": "slim",
-        "repository": "kernel_samsung_manta",
-        "target_path": "kernel/samsung/manta",
         "revision": "kk4.4"
     }
 ]
