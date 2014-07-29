@@ -35,7 +35,6 @@ TARGET_CPU_VARIANT := cortex-a15
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/samsung/manta
 TARGET_KERNEL_CONFIG := slim_manta_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := linaro-4.7-13.04/bin/arm-linux-gnueabihf-
 
 #Bluetooth
 BOARD_HAVE_BLUETOOTH := true
