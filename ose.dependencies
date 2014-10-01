@@ -1,32 +1,27 @@
 [
     {
-        "remote": "slim",
-        "repository": "hardware_samsung",
+        "repository": "SlimRoms/hardware_samsung",
         "target_path": "hardware/samsung",
-        "revision": "kk4.4"
+        "branch": "kk4.4"
     },
     {
-        "remote": "slim",
-        "repository": "kernel_samsung_manta",
+        "repository": "SlimRoms/kernel_samsung_manta",
         "target_path": "kernel/samsung/manta",
-        "revision": "kk4.4"
+        "branch": "kk4.4"
     },
     {
-        "remote": "gh",
         "repository": "TheLoonyBin/proprietary_vendor_samsung",
         "target_path": "vendor/samsung",
-        "revision": "kk4.4"
+        "branch": "kk4.4"
     },
     {
-        "remote": "gh",
         "repository": "TheLoonyBin/proprietary_vendor_widevine",
         "target_path": "vendor/widevine",
-        "revision": "kk4.4"
+        "branch": "kk4.4"
     },
     {
-        "remote": "gh",
         "repository": "TheLoonyBin/proprietary_vendor_broadcom",
         "target_path": "vendor/broadcom",
-        "revision": "kk4.4"
+        "branch": "kk4.4"
     }
 ]
